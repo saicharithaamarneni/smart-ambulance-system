@@ -1,0 +1,47 @@
+2026-10-30 21:44:48 [ERROR]: ValidationError: Notification validation failed: recipient: Cast to ObjectId failed for value "{\n' +
+  "  _id: new ObjectId('6ae4c08a91a2b90a39b4e91f'),\n" +
+  "  name: 'Ravi Kumar',\n" +
+  "  email: 'driver1@sabs.com',\n" +
+  "  phone: '+919876543212',\n" +
+  "  role: 'driver',\n" +
+  '  isActive: true,\n' +
+  '  medicalHistory: [],\n' +
+  '  createdAt: 2026-10-30T16:06:34.101Z,\n' +
+  '  updatedAt: 2026-10-30T16:06:34.101Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "recipient" because of "BSONError"
+    at model.Document.invalidate (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:3397:32)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1502:12)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1154:16)
+    at model.Document (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:180:12)
+    at model.Model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:4867:15)
+    at C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2792:20
+    at Array.map (<anonymous>)
+    at model.create (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2780:34)
+    at createNotification (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\src\services\notificationService.ts:17:45)
+2026-10-30 21:44:48 [ERROR]: ValidationError: Notification validation failed: recipient: Cast to ObjectId failed for value "{\n' +
+  "  _id: new ObjectId('6ae4c08991a2b90a39b4e91c'),\n" +
+  "  name: 'Priya Sharma',\n" +
+  "  email: 'patient@sabs.com',\n" +
+  "  phone: '+919876543211',\n" +
+  "  role: 'patient',\n" +
+  '  isActive: true,\n' +
+  "  address: 'Banjara Hills, Hyderabad',\n" +
+  "  bloodGroup: 'B+',\n" +
+  '  medicalHistory: [],\n' +
+  '  createdAt: 2026-10-30T16:06:33.469Z,\n' +
+  '  updatedAt: 2026-10-30T16:14:47.810Z,\n' +
+  '  __v: 0,\n' +
+  '  lastLogin: 2026-10-30T16:14:47.810Z\n' +
+  '}" (type string) at path "recipient" because of "BSONError"
+    at model.Document.invalidate (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:3397:32)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1502:12)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1154:16)
+    at model.Document (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:180:12)
+    at model.Model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:4867:15)
+    at C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2792:20
+    at Array.map (<anonymous>)
+    at model.create (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2780:34)
+    at createNotification (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\src\services\notificationService.ts:17:45)

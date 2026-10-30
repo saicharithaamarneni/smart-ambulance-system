@@ -1,0 +1,122 @@
+2026-10-30 21:36:59 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:36:59 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:36:59 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:36:59 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:36:59 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:36:59 [INFO]: 🌍 Environment: development
+2026-10-30 21:37:53 [INFO]: ::1 - - [30/Oct/2026:16:07:53 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:38:01 [INFO]: ::1 - - [30/Oct/2026:16:08:01 +0000] "POST /api/auth/login HTTP/1.1" 200 453 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:38:40 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:38:40 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:38:40 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:38:40 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:38:40 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:38:40 [INFO]: 🌍 Environment: development
+2026-10-30 21:44:37 [INFO]: ::1 - - [30/Oct/2026:16:14:37 +0000] "POST /api/auth/login HTTP/1.1" 200 453 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:44:37 [INFO]: ::1 - - [30/Oct/2026:16:14:37 +0000] "GET /api/analytics/overview HTTP/1.1" 200 305 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:44:47 [INFO]: ::1 - - [30/Oct/2026:16:14:47 +0000] "POST /api/auth/login HTTP/1.1" 200 482 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:44:47 [INFO]: ::1 - - [30/Oct/2026:16:14:47 +0000] "POST /api/bookings HTTP/1.1" 201 691 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:44:47 [INFO]: [DISPATCH] Assigning TS09AB1001 to booking SOS-1793376887910-94AE20
+2026-10-30 21:44:47 [INFO]: [DISPATCH] Score: 135.00, ETA: 2 min, Distance: 0 km
+2026-10-30 21:44:47 [INFO]: [DISPATCH] Reasons: Distance: 0.0 km (-0 pts); Excellent ETA: under 5 min (+20 pts); Capability ALS (score 2) +10 pts; Fresh GPS location (+5 pts); [SIMULATED GPS]
+2026-10-30 21:44:48 [ERROR]: ValidationError: Notification validation failed: recipient: Cast to ObjectId failed for value "{\n' +
+  "  _id: new ObjectId('6ae4c08a91a2b90a39b4e91f'),\n" +
+  "  name: 'Ravi Kumar',\n" +
+  "  email: 'driver1@sabs.com',\n" +
+  "  phone: '+919876543212',\n" +
+  "  role: 'driver',\n" +
+  '  isActive: true,\n' +
+  '  medicalHistory: [],\n' +
+  '  createdAt: 2026-10-30T16:06:34.101Z,\n' +
+  '  updatedAt: 2026-10-30T16:06:34.101Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "recipient" because of "BSONError"
+    at model.Document.invalidate (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:3397:32)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1502:12)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1154:16)
+    at model.Document (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:180:12)
+    at model.Model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:4867:15)
+    at C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2792:20
+    at Array.map (<anonymous>)
+    at model.create (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2780:34)
+    at createNotification (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\src\services\notificationService.ts:17:45)
+2026-10-30 21:44:48 [ERROR]: ValidationError: Notification validation failed: recipient: Cast to ObjectId failed for value "{\n' +
+  "  _id: new ObjectId('6ae4c08991a2b90a39b4e91c'),\n" +
+  "  name: 'Priya Sharma',\n" +
+  "  email: 'patient@sabs.com',\n" +
+  "  phone: '+919876543211',\n" +
+  "  role: 'patient',\n" +
+  '  isActive: true,\n' +
+  "  address: 'Banjara Hills, Hyderabad',\n" +
+  "  bloodGroup: 'B+',\n" +
+  '  medicalHistory: [],\n' +
+  '  createdAt: 2026-10-30T16:06:33.469Z,\n' +
+  '  updatedAt: 2026-10-30T16:14:47.810Z,\n' +
+  '  __v: 0,\n' +
+  '  lastLogin: 2026-10-30T16:14:47.810Z\n' +
+  '}" (type string) at path "recipient" because of "BSONError"
+    at model.Document.invalidate (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:3397:32)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1502:12)
+    at model.$set (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:1154:16)
+    at model.Document (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\document.js:180:12)
+    at model.Model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:4867:15)
+    at C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2792:20
+    at Array.map (<anonymous>)
+    at model.create (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\node_modules\mongoose\lib\model.js:2780:34)
+    at createNotification (C:\Users\Sai charitha\OneDrive\Desktop\SABS\backend\src\services\notificationService.ts:17:45)
+2026-10-30 21:44:58 [INFO]: ::1 - - [30/Oct/2026:16:14:58 +0000] "POST /api/auth/login HTTP/1.1" 200 482 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:44:58 [INFO]: ::1 - - [30/Oct/2026:16:14:58 +0000] "GET /api/bookings/SOS-1793376887910-94AE20 HTTP/1.1" 200 1728 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:45:08 [INFO]: ::1 - - [30/Oct/2026:16:15:08 +0000] "POST /api/auth/login HTTP/1.1" 200 482 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:45:08 [WARN]: AI analysis failed, using rule-based fallback:
+2026-10-30 21:45:08 [INFO]: ::1 - - [30/Oct/2026:16:15:08 +0000] "POST /api/ai/analyze-emergency HTTP/1.1" 200 451 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 21:45:18 [WARN]: [DISPATCH] Driver timeout for booking SOS-1793376887910-94AE20
+2026-10-30 21:45:28 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:45:28 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:45:28 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:45:28 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:45:28 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:45:28 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:45:28 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:45:28 [INFO]: 🌍 Environment: development
+2026-10-30 21:53:32 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:53:32 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:53:32 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:53:32 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:53:32 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:53:32 [INFO]: 🌍 Environment: development
+2026-10-30 21:53:42 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:53:42 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:53:42 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:53:42 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:53:42 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:53:42 [INFO]: 🌍 Environment: development
+2026-10-30 21:54:17 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:54:17 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:54:17 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:54:17 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:54:17 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:54:17 [INFO]: 🌍 Environment: development
+2026-10-30 21:55:53 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:55:53 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:55:53 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:55:53 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:55:53 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:55:53 [INFO]: 🌍 Environment: development
+2026-10-30 21:56:07 [INFO]: [SOCKET] Socket.IO handlers initialized
+2026-10-30 21:56:07 [INFO]: ✅ MongoDB connected: localhost
+2026-10-30 21:56:07 [INFO]: 📦 Database: sabs_db
+2026-10-30 21:56:07 [INFO]: 🚑 SABS Backend running on port 5000
+2026-10-30 21:56:07 [INFO]: 📡 Socket.IO ready
+2026-10-30 21:56:07 [INFO]: 🌍 Environment: development
+2026-10-30 22:04:16 [INFO]: ::1 - - [30/Oct/2026:16:34:16 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 22:04:23 [INFO]: ::1 - - [30/Oct/2026:16:34:23 +0000] "GET /api/analytics/overview HTTP/1.1" 401 63 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 22:04:32 [INFO]: ::1 - - [30/Oct/2026:16:34:32 +0000] "POST /api/auth/login HTTP/1.1" 200 453 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 22:04:32 [INFO]: ::1 - - [30/Oct/2026:16:34:32 +0000] "GET /api/analytics/overview HTTP/1.1" 200 309 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-10-30 22:06:23 [INFO]: ::1 - - [30/Oct/2026:16:36:23 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
+2026-10-30 22:06:23 [INFO]: ::1 - - [30/Oct/2026:16:36:23 +0000] "GET /favicon.ico HTTP/1.1" 404 58 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
+2026-10-30 22:06:23 [INFO]: ::1 - - [30/Oct/2026:16:36:23 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
+2026-10-30 22:08:54 [INFO]: ::1 - - [30/Oct/2026:16:38:54 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
+2026-10-30 22:09:16 [INFO]: ::1 - - [30/Oct/2026:16:39:16 +0000] "GET / HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
+2026-10-30 22:09:50 [INFO]: ::1 - - [30/Oct/2026:16:39:50 +0000] "GET /health HTTP/1.1" 200 105 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
